@@ -3,3 +3,33 @@
 @{
         ViewData["Title"] = "Ciudadano";
 }
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TRANSITO Y TRANSPORTE</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/formulario.css" />
+</head>
+
+                <div class="formulario">      
+                  <h1>CONSULTA CIUDADANO</h1>
+                  <h2>Digite el documento</h2>
+                    
+            
+            
+                      <form action="/update" method="post">       
+            
+                        
+                            <p>
+                              <label for="N° identificacion" class="introducir_documento">N° Documento
+                                <span class="obligatorio">*</span>
+                              </label>
+                                <input type="text" name="introducir_documento" id="cc_ciudadano" required="obligatorio" placeholder="Digita tu documento">
+                            </p>
+                      
+                                <button type="submit" name="enviar_formulario" id="enviar"><p>Consultar</p></button>
+                
+                        </form>
+                </div>
